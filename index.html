@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trillathalon</title>
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-gray-900 h-full text-white font-sans">
+<div class="flex flex-col items-center py-12">
+    <h1 class="text-4xl font-bold mb-4">All aboard the Trillathalon</h1>
+    <p class="text-lg mb-8">Beware of rick rolls, sussy aliens and probes without bogos.</p>
+
+    <div class="w-full max-w-2xl">
+        <div>
+            <ul class="flex flex-row -mb-px text-xl font-medium text-center justify-center w-full inline-flex" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                <li class="me-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg transition-all duration-300
+                                       hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300
+                                       text-gray-500 dark:text-gray-400
+                                       aria-selected:bg-gray-700 dark:aria-selected:bg-gray-700
+                                       aria-selected:text-white dark:aria-selected:text-white
+                                       aria-selected:border-blue-600 dark:aria-selected:border-blue-500"
+                            id="wyr-tab" data-tabs-target="#wyr" type="button" role="tab" aria-controls="wyr" aria-selected="true">
+                        Would You Rather
+                    </button>
+                </li>
+                <li class="me-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg transition-all duration-300
+                                       hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300
+                                       border-transparent text-gray-500 dark:text-gray-400
+                                       aria-selected:bg-gray-700 dark:aria-selected:bg-gray-700
+                                       aria-selected:text-white dark:aria-selected:text-white
+                                       aria-selected:border-blue-600 dark:aria-selected:border-blue-500"
+                            id="tl-tab" data-tabs-target="#tl" type="button" role="tab" aria-controls="tl" aria-selected="false">
+                        Tier Lists
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="default-tab-content" class="w-full mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 max-w-2xl">
+        <div class="w-4/5 mx-auto block" id="wyr" role="tabpanel" aria-labelledby="wyr-tab">
+            <p id="wyr-question-text" class="text-md text-gray-500 dark:text-gray-200">Testing this space</p>
+            <div class="flex flex-row items-center justify-center">
+                <button id="prev-wyr-btn" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 mx-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><</button>
+                <button id="next-wyr-btn" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 mx-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">></button>
+            </div>
+            <div class="w-full mt-12">
+                <ul class="steps steps-horizontal w-full text-white">
+                    <li class="step step-primary" data-content="1"></li>
+                    <li class="step" data-content="2"></li>
+                    <li class="step" data-content="3"></li>
+                    <li class="step" data-content="4"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hidden w-4/5 mx-auto" id="tl" role="tabpanel" aria-labelledby="tl-tab">
+            <p class="text-md text-gray-500 dark:text-gray-200">This is some placeholder content for the <strong class="font-medium text-gray-800 dark:text-white">Tier Lists tab</strong>. Clicking another tab will toggle the visibility of this one for the next.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
