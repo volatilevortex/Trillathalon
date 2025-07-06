@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const wyrQuestions = [
-        "Would you rather fight 100 duck-sized horses or 1 horse-sized duck?",
-        "Would you rather have unlimited bacon but no games, or unlimited games but no games?",
-        "Would you rather be able to talk to animals or speak all human languages?",
-        "Would you rather have a rewind button or a pause button in your life?",
-        "Would you rather have perpetually sticky hands or perpetually wet feet?",
-        "Would you rather live without the internet or live without air conditioning?",
-        "Would you rather be able to fly or be invisible?",
-        "Would you rather have a pet dragon or a pet unicorn?"
+        "Would you rather [Placeholder Option A] or [Placeholder Option B]?",
+        "Would you rather [Insert First Scenario Here] or [Insert Second Scenario Here]?",
+        "Would you rather [Decision Point 1] or [Decision Point 2]?",
+        "Would you rather have [Benefit X] or [Benefit Y]?",
+        "Would you rather experience [Challenge A] or [Challenge B]?",
+        "Would you rather live with [Condition 1] or [Condition 2]?",
+        "Would you rather possess [Power 1] or [Power 2]?",
+        "Would you rather have [Companion Type 1] or [Companion Type 2]?"
     ];
 
     let currentWyrIndex = 0;
