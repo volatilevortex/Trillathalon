@@ -100,13 +100,18 @@ function addWyrSteps(){
         const newStepLi = document.createElement('li');
         newStepLi.id = `wyr-${i}`;
         newStepLi.classList.add('step');
-        newStepLi.classList.add('step-minimal');
         if(i === 0) {
             newStepLi.classList.add('step-primary');
         }
         newStepLi.setAttribute('data-content', String(i + 1));
         stepsList.appendChild(newStepLi);
     }
+
+    const newStepLi = document.createElement('li');
+    newStepLi.id = `wyr-q`;
+    newStepLi.classList.add('step');
+    newStepLi.setAttribute('data-content', '?');
+    stepsList.appendChild(newStepLi);
 }
 
 function setWrySteps(){
