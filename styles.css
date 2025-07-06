@@ -1,0 +1,9 @@
+#wyr-steps {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#wyr-steps .step {
+    min-width: 2.25rem;
+}
