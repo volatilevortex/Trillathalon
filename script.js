@@ -54,6 +54,7 @@ function setWyrNavigation(){
 
     if (prevWyrBtn) {
         prevWyrBtn.addEventListener('click', () => {
+            if(currentWyrIndex <= 0) return;
             currentWyrIndex--;
             updateWyrDisplay();
         });
@@ -61,6 +62,7 @@ function setWyrNavigation(){
 
     if (nextWyrBtn) {
         nextWyrBtn.addEventListener('click', () => {
+            if(currentWyrIndex >= wyrQuestions.length + wyrExtraQuestions.length) return;
             currentWyrIndex++;
             updateWyrDisplay();
         });
@@ -119,6 +121,7 @@ function setTLNavigation(){
 
     if (prevTLBtn) {
         prevTLBtn.addEventListener('click', () => {
+            if(currentTLIndex <= 0) return;
             currentTLIndex--;
             updateTLDisplay();
         });
@@ -126,6 +129,7 @@ function setTLNavigation(){
 
     if (nextTLBtn) {
         nextTLBtn.addEventListener('click', () => {
+            if(currentTLIndex > TLArray.length + TLExtraArray.length) return;
             currentTLIndex++;
             updateTLDisplay();
         });
