@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en" class="h-full" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trillathalon</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <style>
@@ -14,7 +14,15 @@
 </head>
 <body class="h-full text-white font-sans" style="background-image: url('assets/bg.png'); background-size: cover; background-position: center;">
 <div class="flex flex-col items-center py-12 h-2/3">
-    <div class="flex flex-col items-center m-8 mb-12 p-4 backdrop-blur-md rounded-xl bg-gray-700/60 shadow-lg">
+    <div class="flex flex-col items-center m-8 mb-12 p-4 backdrop-blur-md rounded-xl dark:bg-gray-700/40 shadow-lg" style="position: relative; z-index: 0;">
+        <div class="h-full w-full" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; opacity: 60%; pointer-events: none;">
+            <div class="h-full w-full starry-1" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1;"></div>
+            <div class="h-full w-full starry-2" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 2;"></div>
+            <div class="h-full w-full starry-3" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 3;"></div>
+            <div class="h-full w-full starry-4" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 4;"></div>
+            <div class="h-full w-full starry-5" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 5;"></div>
+            <div class="h-full w-full starry-6" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 6;"></div>
+        </div>
         <h1 class="text-2xl font-bold mb-4">All aboard the Trillathalon</h1>
         <p class="text-lg">Beware of rick rolls, sussy aliens and probes without bogos.</p>
     </div>
@@ -23,23 +31,23 @@
         <div>
             <ul class="flex flex-row -mb-px text-xl font-medium text-center justify-center w-full inline-flex" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                 <li class="me-2" role="presentation">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg transition-all duration-300 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md
+                    <button class="my-btn inline-block p-4 border-b-2 rounded-t-lg transition-all duration-300 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md
                                        hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300
                                        text-gray-300 dark:text-gray-200
-                                       aria-selected:bg-blue-700/60 dark:aria-selected:bg-blue-700/60
+                                       aria-selected:bg-pink-700/60 dark:aria-selected:bg-pink-700/60
                                        aria-selected:text-white dark:aria-selected:text-white
-                                       aria-selected:border-blue-600 dark:aria-selected:border-blue-500"
+                                       aria-selected:border-pink-600 dark:aria-selected:border-pink-500"
                             id="wyr-tab" data-tabs-target="#wyr" type="button" role="tab" aria-controls="wyr" aria-selected="true">
                         Would You Rather
                     </button>
                 </li>
                 <li class="me-2" role="presentation">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg transition-all duration-300 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md
+                    <button class="my-btn inline-block p-4 border-b-2 rounded-t-lg transition-all duration-300 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md
                                        hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300
                                        text-gray-300 dark:text-gray-200
-                                       aria-selected:bg-blue-700/60 dark:aria-selected:bg-blue-700/60
+                                       aria-selected:bg-pink-700/60 dark:aria-selected:bg-pink-700/60
                                        aria-selected:text-white dark:aria-selected:text-white
-                                       aria-selected:border-blue-600 dark:aria-selected:border-blue-500"
+                                       aria-selected:border-pink-600 dark:aria-selected:border-pink-500"
                             id="tl-tab" data-tabs-target="#tl" type="button" role="tab" aria-controls="tl" aria-selected="false">
                         Tier Lists
                     </button>
@@ -48,17 +56,25 @@
         </div>
     </div>
 
-    <div id="default-tab-content" class="w-2/5 h-full mx-auto bg-white/60 dark:bg-gray-800/60 rounded-lg shadow-xl p-6 backdrop-blur-md shadow-lg">
+    <div id="default-tab-content" class="w-2/5 h-full mx-auto bg-white/60 dark:bg-gray-800/60 rounded-lg shadow-xl p-6 backdrop-blur-md shadow-lg" style="position: relative; z-index: 0">
+        <div class="h-full w-full" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; opacity: 60%; pointer-events: none;">
+            <div class="h-full w-full starry-1" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1;"></div>
+            <div class="h-full w-full starry-2" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 2;"></div>
+            <div class="h-full w-full starry-3" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 3;"></div>
+            <div class="h-full w-full starry-4" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 4;"></div>
+            <div class="h-full w-full starry-5" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 5;"></div>
+            <div class="h-full w-full starry-6" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 6;"></div>
+        </div>
         <div class="mx-auto block flex flex-col justify-between h-full" id="wyr" role="tabpanel" aria-labelledby="wyr-tab">
             <div class="w-full">
                 <div class="flex flex-row items-center justify-between">
-                    <button id="prev-wyr-btn" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 mx-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                    <button id="prev-wyr-btn" class="my-btn text-white bg-pink-700 hover:bg-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 mx-4 dark:bg-pink-600 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-pink-800" style="z-index: 999">
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0L5 1m-4 4L5 9"/>
                         </svg>
                     </button>
                     <progress id="wyr-progress" class="progress w-full" value="0" max="100"></progress>
-                    <button id="next-wyr-btn" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg px-5 py-2.5 mx-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                    <button id="next-wyr-btn" class="my-btn text-white bg-pink-700 hover:bg-pink-800 font-medium rounded-lg px-5 py-2.5 mx-4 dark:bg-pink-600 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-pink-800" style="z-index: 999">
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                         </svg>
@@ -72,20 +88,20 @@
         </div>
         <div class="hidden w-full h-full mx-auto flex flex-col justify-between items-center" id="tl" role="tabpanel" aria-labelledby="tl-tab">
             <div class="flex flex-row items-center justify-center">
-                <button id="prev-tl-btn" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 mx-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                <button id="prev-tl-btn" class="my-btn text-white bg-pink-700 hover:bg-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 mx-4 dark:bg-pink-600 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-pink-800" style="z-index: 999">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0L5 1m-4 4L5 9"/>
                     </svg>
                 </button>
                 <ul class="steps steps-horizontal w-full text-white" id="tl-steps">
                 </ul>
-                <button id="next-tl-btn" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg px-5 py-2.5 mx-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                <button id="next-tl-btn" class="my-btn text-white bg-pink-700 hover:bg-pink-800 font-medium rounded-lg px-5 py-2.5 mx-4 dark:bg-pink-600 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-pink-800" style="z-index: 999">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                 </button>
             </div>
-            <a id="tl-button" target="_blank" href="" class="h-2/5 w-2/5 text-white flex items-center justify-center bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 mx-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">TL Button</a>
+            <a id="tl-button" target="_blank" href="" class="my-btn h-2/5 w-2/5 text-white flex items-center justify-center bg-pink-700 hover:bg-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 mx-4 dark:bg-pink-600 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-pink-800" style="z-index: 999">TL Button</a>
         </div>
     </div>
 </div>
