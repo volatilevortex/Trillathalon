@@ -77,29 +77,28 @@ function setWyrNavigation(){
         setWryProgress()
         if(currentWyrIndex === 0){
             if (prevWyrBtn) {
-                prevWyrBtn.disabled = true;
-                prevWyrBtn.classList.remove('bg-blue-700', 'hover:bg-blue-800', 'dark:bg-blue-600', 'dark:hover:bg-blue-700', 'focus:outline-none', 'dark:focus:ring-blue-800', );
-                prevWyrBtn.classList.add('bg-gray-600', 'cursor-not-allowed', 'dark:bg-gray-700');
+                prevWyrBtn.classList.remove('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                prevWyrBtn.classList.add('!bg-gray-600', '!cursor-not-allowed', '!dark:bg-gray-700');
             }
         } else {
             if (prevWyrBtn) {
                 prevWyrBtn.disabled = false;
-                prevWyrBtn.classList.add('bg-blue-700', 'hover:bg-blue-800', 'dark:bg-blue-600', 'dark:hover:bg-blue-700', 'focus:outline-none', 'dark:focus:ring-blue-800', );
-                prevWyrBtn.classList.remove('bg-gray-600', 'cursor-not-allowed', 'dark:bg-gray-700');
+                prevWyrBtn.classList.add('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                prevWyrBtn.classList.remove('!bg-gray-600', '!cursor-not-allowed', '!dark:bg-gray-700');
             }
         }
 
         if (currentWyrIndex === (wyrQuestions.length + wyrExtraQuestions.length) - 1) {
             if (nextWyrBtn) {
                 nextWyrBtn.disabled = true;
-                nextWyrBtn.classList.remove('bg-blue-700', 'hover:bg-blue-800', 'dark:bg-blue-600', 'dark:hover:bg-blue-700', 'focus:outline-none', 'dark:focus:ring-blue-800', );
-                nextWyrBtn.classList.add('bg-gray-600', 'cursor-not-allowed', 'dark:bg-gray-700');
+                nextWyrBtn.classList.remove('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                nextWyrBtn.classList.add('!bg-gray-600', '!cursor-not-allowed', '!dark:bg-gray-700');
             }
         } else {
             if (nextWyrBtn) {
                 nextWyrBtn.disabled = false;
-                nextWyrBtn.classList.add('bg-blue-700', 'hover:bg-blue-800', 'dark:bg-blue-600', 'dark:hover:bg-blue-700', 'focus:outline-none', 'dark:focus:ring-blue-800', );
-                nextWyrBtn.classList.remove('bg-gray-600', 'cursor-not-allowed', 'dark:bg-gray-700');
+                nextWyrBtn.classList.add('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                nextWyrBtn.classList.remove('!bg-gray-600', '!cursor-not-allowed', '!dark:bg-gray-700');
             }
         }
     }
@@ -146,28 +145,28 @@ function setTLNavigation(){
         if(currentTLIndex === 0){
             if (prevTLBtn) {
                 prevTLBtn.disabled = true;
-                prevTLBtn.classList.remove('bg-blue-700', 'hover:bg-blue-800', 'dark:bg-blue-600', 'dark:hover:bg-blue-700', 'focus:outline-none', 'dark:focus:ring-blue-800', );
-                prevTLBtn.classList.add('bg-gray-600', 'cursor-not-allowed', 'dark:bg-gray-700');
+                prevTLBtn.classList.remove('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                prevTLBtn.classList.add('!bg-gray-600', '!cursor-not-allowed', '!dark:bg-gray-700');
             }
         } else {
             if (prevTLBtn) {
                 prevTLBtn.disabled = false;
-                prevTLBtn.classList.add('bg-blue-700', 'hover:bg-blue-800', 'dark:bg-blue-600', 'dark:hover:bg-blue-700', 'focus:outline-none', 'dark:focus:ring-blue-800', );
-                prevTLBtn.classList.remove('bg-gray-600', 'cursor-not-allowed', 'dark:bg-gray-700');
+                prevTLBtn.classList.add('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                prevTLBtn.classList.remove('!bg-gray-600', '!cursor-not-allowed', '!dark:bg-gray-700');
             }
         }
 
         if (currentTLIndex === (TLArray.length + TLExtraArray.length) - 1) {
             if (nextTLBtn) {
                 nextTLBtn.disabled = true;
-                nextTLBtn.classList.remove('bg-blue-700', 'hover:bg-blue-800', 'dark:bg-blue-600', 'dark:hover:bg-blue-700', 'focus:outline-none', 'dark:focus:ring-blue-800', );
-                nextTLBtn.classList.add('bg-gray-600', 'cursor-not-allowed', 'dark:bg-gray-700');
+                nextTLBtn.classList.remove('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                nextTLBtn.classList.add('!bg-gray-600', '!cursor-not-allowed', '!dark:bg-gray-700');
             }
         } else {
             if (nextTLBtn) {
                 nextTLBtn.disabled = false;
-                nextTLBtn.classList.add('bg-blue-700', 'hover:bg-blue-800', 'dark:bg-blue-600', 'dark:hover:bg-blue-700', 'focus:outline-none', 'dark:focus:ring-blue-800',);
-                nextTLBtn.classList.remove('bg-gray-600', 'cursor-not-allowed', 'dark:bg-gray-700');
+                nextTLBtn.classList.add('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                nextTLBtn.classList.remove('!bg-gray-600', '!cursor-not-allowed', '!dark:bg-gray-700');
             }
         }
     }
