@@ -5,33 +5,33 @@ const wyrQuestions = [
     ['Username 4', 'Benefit X', 'Benefit Y'],
     ['Username 5', 'Challenge A', 'Challenge B'],
     ['Username 6', 'Condition 1', 'Condition 2'],
-    ['Username 7', 'Power 1', 'Power 2'],
-    ['Username 8', 'Companion Type 1', 'Companion Type 2'],
-    ['Username 9', 'Transform A', 'Transform B'],
-    ['Username 10', 'Unlimited Resource 1', 'Unlimited Resource 2'],
-    ['Username 11', 'Supernatural Ability 1', 'Supernatural Ability 2'],
-    ['Username 12', 'Personal Service A', 'Personal Service B'],
-    ['Username 13', 'Time State 1', 'Time State 2'],
-    ['Username 14', 'Never Action 1', 'Only Action 2'],
-    ['Username 15', 'Perpetual Item 1', 'Perpetual Item 2'],
-    ['Username 16', 'Entity Type 1', 'Language Type 2'],
-    ['Username 17', 'Modern Convenience 1', 'Essential Utility 2'],
-    ['Username 18', 'Life Control Feature 1', 'Life Control Feature 2'],
-    ['Username 19', 'Greatest in Art Form 1', 'Greatest in Art Form 2'],
-    ['Username 20', 'Lose Memory Set A', 'Lose Memory Set B'],
-    ['Username 21', 'Acquired Societal Status', 'Possess Ultimate Attribute'],
-    ['Username 22', 'Physical Enhancement 1', 'Physical Enhancement 2'],
-    ['Username 23', 'Unpleasant Routine 1', 'Unsanitary Habit 2'],
-    ['Username 24', 'Manipulate Element 1', 'Manipulate Element 2'],
-    ['Username 25', 'Spooky Setting A with Presence 1', 'Normal Setting B with Spooky Location 2'],
-    ['Username 26', 'Perceive Mental Ability A', 'Influence Mental Ability B'],
-    ['Username 27', 'Persistently Face Frustration Type 1', 'Consistently Experience Frustration Type 2'],
-    ['Username 28', 'Body Condition 1', 'Body Condition 2'],
-    ['Username 29', 'Post‑mortem Recognition', 'Living Anonymity'],
-    ['Username 30', 'Perfectly Imitate Vocal Type', 'Perfectly Replicate Musical Talent'],
-    ['Username 31', 'Only Use Volume Level 1', 'Only Use Volume Level 2'],
-    ['Username 32', 'Adopt Mythical Creature 1', 'Adopt Mythical Creature 2'],
-    ['Username 33', 'Inhabit Dwelling Type 1', 'Inhabit Dwelling Type 2'],
+    // ['Username 7', 'Power 1', 'Power 2'],
+    // ['Username 8', 'Companion Type 1', 'Companion Type 2'],
+    // ['Username 9', 'Transform A', 'Transform B'],
+    // ['Username 10', 'Unlimited Resource 1', 'Unlimited Resource 2'],
+    // ['Username 11', 'Supernatural Ability 1', 'Supernatural Ability 2'],
+    // ['Username 12', 'Personal Service A', 'Personal Service B'],
+    // ['Username 13', 'Time State 1', 'Time State 2'],
+    // ['Username 14', 'Never Action 1', 'Only Action 2'],
+    // ['Username 15', 'Perpetual Item 1', 'Perpetual Item 2'],
+    // ['Username 16', 'Entity Type 1', 'Language Type 2'],
+    // ['Username 17', 'Modern Convenience 1', 'Essential Utility 2'],
+    // ['Username 18', 'Life Control Feature 1', 'Life Control Feature 2'],
+    // ['Username 19', 'Greatest in Art Form 1', 'Greatest in Art Form 2'],
+    // ['Username 20', 'Lose Memory Set A', 'Lose Memory Set B'],
+    // ['Username 21', 'Acquired Societal Status', 'Possess Ultimate Attribute'],
+    // ['Username 22', 'Physical Enhancement 1', 'Physical Enhancement 2'],
+    // ['Username 23', 'Unpleasant Routine 1', 'Unsanitary Habit 2'],
+    // ['Username 24', 'Manipulate Element 1', 'Manipulate Element 2'],
+    // ['Username 25', 'Spooky Setting A with Presence 1', 'Normal Setting B with Spooky Location 2'],
+    // ['Username 26', 'Perceive Mental Ability A', 'Influence Mental Ability B'],
+    // ['Username 27', 'Persistently Face Frustration Type 1', 'Consistently Experience Frustration Type 2'],
+    // ['Username 28', 'Body Condition 1', 'Body Condition 2'],
+    // ['Username 29', 'Post‑mortem Recognition', 'Living Anonymity'],
+    // ['Username 30', 'Perfectly Imitate Vocal Type', 'Perfectly Replicate Musical Talent'],
+    // ['Username 31', 'Only Use Volume Level 1', 'Only Use Volume Level 2'],
+    // ['Username 32', 'Adopt Mythical Creature 1', 'Adopt Mythical Creature 2'],
+    // ['Username 33', 'Inhabit Dwelling Type 1', 'Inhabit Dwelling Type 2'],
     ['Username 34', 'Lose the capacity for Sense/Function 1', 'Lose the capacity for Sense/Function 2']
 ];
 
@@ -43,8 +43,14 @@ const wyrExtraQuestions = [
 
 let currentWyrIndex = 0;
 
-const TLArray = ["Test1", "test2", "test3"];
-const TLExtraArray = ["testExtra", "testExtra 2"];
+const TLArray = [
+    ["User 1", "Text 1", "https://www.google.com"],
+    ["User 2", "Text 2", "https://www.bing.com"]
+]
+const TLExtraArray = [
+    ["User 1E", "Text 1E", "https://www.chatgpt.com"],
+    ["User 2E", "Text 2E", "https://www.fast.com"]
+]
 let currentTLIndex = 0;
 
 function generateRandomString() {
@@ -57,9 +63,21 @@ function generateRandomString() {
     return result;
 }
 
+function setTitleToRick(state){
+    const rick = document.getElementById('title-rick');
+    const title = document.getElementById('title');
+    if(state){
+        rick.classList.remove("hidden");
+        title.classList.add("hidden");
+    } else {
+        rick.classList.add("hidden");
+        title.classList.remove("hidden");
+    }
+}
+
 function setWyrNavigation(){
     const wyrCredit = document.getElementById('wyr-credit');
-    const blurryCredit = document.getElementById('blurry-credit');
+    const blurryCredit = document.getElementById('blurry-wyr-credit');
     const wyrQuestionDisplay = document.getElementById('wyr-question-text');
     const prevWyrBtn = document.getElementById('prev-wyr-btn');
     const nextWyrBtn = document.getElementById('next-wyr-btn');
@@ -140,9 +158,22 @@ function setWryProgress() {
 
 
 function setTLNavigation(){
-    const TLDisplay = document.getElementById('tl-button');
+    const tlCredit = document.getElementById('tl-credit');
+    const blurryTLCredit = document.getElementById('blurry-tl-credit');
+    const TLButton = document.getElementById('tl-button');
     const prevTLBtn = document.getElementById('prev-tl-btn');
     const nextTLBtn = document.getElementById('next-tl-btn');
+
+    if(tlCredit){
+        tlCredit.addEventListener('click', () => {
+            if(currentTLIndex < TLArray.length){
+                blurryTLCredit.textContent=TLArray[currentTLIndex][0];
+            } else {
+                blurryTLCredit.textContent=TLExtraArray[currentTLIndex-TLArray.length][0];
+            }
+            blurryTLCredit.classList.remove("blur");
+        });
+    }
 
     if (prevTLBtn) {
         prevTLBtn.addEventListener('click', () => {
@@ -161,14 +192,21 @@ function setTLNavigation(){
     }
 
     function updateTLDisplay(){
-        if (TLDisplay) {
+        blurryTLCredit.textContent=generateRandomString();
+        blurryTLCredit.classList.add("blur");
+        if (TLButton) {
             if(currentTLIndex < TLArray.length){
-                TLDisplay.textContent = TLArray[currentTLIndex];
-                TLDisplay.setAttribute("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1")
+                TLButton.textContent = TLArray[currentTLIndex][1];
+                TLButton.setAttribute("href", TLArray[currentTLIndex][2])
             } else {
-                TLDisplay.textContent = TLExtraArray[currentTLIndex-TLArray.length];
-                TLDisplay.setAttribute("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1")
+                TLButton.textContent = TLExtraArray[currentTLIndex-TLArray.length][1];
+                TLButton.setAttribute("href", TLExtraArray[currentTLIndex-TLArray.length][2])
             }
+        }
+        if(currentTLIndex === 2){
+            setTitleToRick(true);
+        } else {
+            setTitleToRick(false);
         }
         setTLSteps()
         if(currentTLIndex === 0){
