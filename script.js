@@ -94,8 +94,6 @@ function setWyrNavigation(){
     function updateWyrDisplay() {
         blurryCredit.textContent=generateRandomString();
         blurryCredit.classList.add("blur");
-        wyrCredit.classList.add('!bg-gray-500', '!dark:bg-gray-700');
-        wyrCredit.classList.remove('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
         if (wyrQuestionDisplay) {
             if(currentWyrIndex < wyrQuestions.length){
                 wyrQuestionDisplay.textContent = wyrQuestions[currentWyrIndex][1] + " or " + wyrQuestions[currentWyrIndex][2];
