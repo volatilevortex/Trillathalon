@@ -213,6 +213,17 @@ function setTLSteps(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const style = document.createElement('style');
+    style.textContent = `
+    .steps.steps-primary .step::after {
+      background-color: #374151 !important;
+    }
+    .steps.steps-primary .step {
+      color: #fff !important;
+      background-color: #374151 !important;
+    }
+  `;
+    document.head.appendChild(style);
     setWyrNavigation();
     addTLSteps();
     setTLNavigation();

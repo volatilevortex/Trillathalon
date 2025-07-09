@@ -45,6 +45,13 @@
     color: #ffffff;
 }
 
+[data-theme="mytheme"] {
+    --p: 0.6576 0.2499 58.41;       /* oklch for #db2777 */
+    --pc: 0 0% 100%;                /* white text on pink */
+    --fallback-p: #db2777;
+    --fallback-pc: #ffffff;
+}
+
 .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }/* Common styles applied to all classes starting with 'starry-' */
