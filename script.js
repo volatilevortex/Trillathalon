@@ -18,7 +18,7 @@ const wyrQuestions = [
     ["Pixi","Wake up once a week completely naked in a random public place or have your inner thoughts read aloud 24/7?"],
     ["Poggy","Have unlimited bacon but no more games or games, unlimited games, but no more games?"],
     ["Artie","Have to babysit 50 alien babies for a day or turn into a space llama for a week?"],
-    ["Gobblo","Have a roomba that clean flawlessly but scream bloody murder every time it bumps into things or have a roomba that actively makes your house dirtier but constantly giving you sweet talk in the sexiest voice you can imagine?"],
+    ["Gobblo","Have a roomba that cleans flawlessly but screams bloody murder every time it bumps into things or have a roomba that actively makes your house dirtier but constantly gives you sweet talk in the sexiest voice you can imagine?"],
     ["Duckie","Clean up cat vomit with your bare hand once or eat an entire meal of foods you really dislike?"],
     ["Soldier","Get the next gen NVIDIA GPU, but it will only last 3 months or Get an Nvidia 5090, but you can only play Sims 2 with it?"],
     ["Folivore","Bint your photos or print your bogos?"],
