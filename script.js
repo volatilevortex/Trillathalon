@@ -176,6 +176,54 @@ function setTitleToRick(state){
     }
 }
 
+function setTitleToJoomer(state){
+    const joomer = document.getElementById('title-joomer');
+    const title = document.getElementById('title');
+    if(state){
+        joomer.classList.remove("hidden");
+        title.classList.add("hidden");
+    } else {
+        joomer.classList.add("hidden");
+        title.classList.remove("hidden");
+    }
+}
+
+function setTitleToChill(state){
+    const chill = document.getElementById('title-chill');
+    const title = document.getElementById('title');
+    if(state){
+        chill.classList.remove("hidden");
+        title.classList.add("hidden");
+    } else {
+        chill.classList.add("hidden");
+        title.classList.remove("hidden");
+    }
+}
+
+function setTitleToFace(state){
+    const face = document.getElementById('title-face');
+    const title = document.getElementById('title');
+    if(state){
+        face.classList.remove("hidden");
+        title.classList.add("hidden");
+    } else {
+        face.classList.add("hidden");
+        title.classList.remove("hidden");
+    }
+}
+
+function setTitleToCockroach(state){
+    const cockroach = document.getElementById('title-cockroach');
+    const title = document.getElementById('title');
+    if(state){
+        cockroach.classList.remove("hidden");
+        title.classList.add("hidden");
+    } else {
+        cockroach.classList.add("hidden");
+        title.classList.remove("hidden");
+    }
+}
+
 function setWyrNavigation(){
     const wyrCredit = document.getElementById('wyr-credit');
     const blurryCredit = document.getElementById('blurry-wyr-credit');
@@ -239,10 +287,19 @@ function setWyrNavigation(){
             }
         }
         setWryProgress()
-        if(currentWyrIndex === 7 || currentWyrIndex === 28){
+
+        setTitleToRick(false);
+        setTitleToJoomer(false);
+        setTitleToChill(false);
+        setTitleToFace(false);
+        setTitleToCockroach(false);
+
+        if(currentWyrIndex === 7 || currentWyrIndex === 8 || currentWyrIndex === 19 || currentWyrIndex === 28 || currentWyrIndex === 67){
             setTitleToRick(true);
-        } else {
-            setTitleToRick(false);
+        } else if(currentWyrIndex === 15 || currentWyrIndex === 32 || currentWyrIndex === 53 || currentWyrIndex === 45){
+            setTitleToJoomer(true);
+        } else if(currentWyrIndex === 21 || currentWyrIndex === 42 || currentWyrIndex === 37 || currentWyrIndex === 59 || currentWyrIndex === 77){
+            setTitleToChill(true);
         }
         if(currentWyrIndex === 0){
             if (prevWyrBtn) {
@@ -328,6 +385,23 @@ function setTLNavigation(){
             }
         }
         setTLProgress()
+
+        setTitleToRick(false);
+        setTitleToJoomer(false);
+        setTitleToChill(false);
+        setTitleToFace(false);
+        setTitleToCockroach(false);
+
+        if(currentTLIndex === 5 || currentTLIndex === 19){
+            setTitleToRick(true);
+        } else if(currentTLIndex === 11 || currentTLIndex === 25){
+            setTitleToChill(true);
+        } else if(currentTLIndex === 15 || currentTLIndex === 18 || currentTLIndex === 28){
+            setTitleToFace(true);
+        } else if(currentTLIndex === 2 || currentTLIndex === 21){
+            setTitleToCockroach(true);
+        }
+
         if(currentTLIndex === 0){
             if (prevTLBtn) {
                 prevTLBtn.disabled = true;
