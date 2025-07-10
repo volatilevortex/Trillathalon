@@ -1,55 +1,156 @@
 const wyrQuestions = [
-    ['Username 1', 'Placeholder Option A', 'Placeholder Option B'],
-    ['Username 2', 'Insert First very veyr very very very very very very very long Scenario Here', 'Insert Second Scenario Here'],
-    ['Username 3', 'Decision Point 1', 'Decision Point 2'],
-    ['Username 4', 'Benefit X', 'Benefit Y'],
-    ['Username 5', 'Challenge A', 'Challenge B'],
-    ['Username 6', 'Condition 1', 'Condition 2'],
-    // ['Username 7', 'Power 1', 'Power 2'],
-    // ['Username 8', 'Companion Type 1', 'Companion Type 2'],
-    // ['Username 9', 'Transform A', 'Transform B'],
-    // ['Username 10', 'Unlimited Resource 1', 'Unlimited Resource 2'],
-    // ['Username 11', 'Supernatural Ability 1', 'Supernatural Ability 2'],
-    // ['Username 12', 'Personal Service A', 'Personal Service B'],
-    // ['Username 13', 'Time State 1', 'Time State 2'],
-    // ['Username 14', 'Never Action 1', 'Only Action 2'],
-    // ['Username 15', 'Perpetual Item 1', 'Perpetual Item 2'],
-    // ['Username 16', 'Entity Type 1', 'Language Type 2'],
-    // ['Username 17', 'Modern Convenience 1', 'Essential Utility 2'],
-    // ['Username 18', 'Life Control Feature 1', 'Life Control Feature 2'],
-    // ['Username 19', 'Greatest in Art Form 1', 'Greatest in Art Form 2'],
-    // ['Username 20', 'Lose Memory Set A', 'Lose Memory Set B'],
-    // ['Username 21', 'Acquired Societal Status', 'Possess Ultimate Attribute'],
-    // ['Username 22', 'Physical Enhancement 1', 'Physical Enhancement 2'],
-    // ['Username 23', 'Unpleasant Routine 1', 'Unsanitary Habit 2'],
-    // ['Username 24', 'Manipulate Element 1', 'Manipulate Element 2'],
-    // ['Username 25', 'Spooky Setting A with Presence 1', 'Normal Setting B with Spooky Location 2'],
-    // ['Username 26', 'Perceive Mental Ability A', 'Influence Mental Ability B'],
-    // ['Username 27', 'Persistently Face Frustration Type 1', 'Consistently Experience Frustration Type 2'],
-    // ['Username 28', 'Body Condition 1', 'Body Condition 2'],
-    // ['Username 29', 'Post‑mortem Recognition', 'Living Anonymity'],
-    // ['Username 30', 'Perfectly Imitate Vocal Type', 'Perfectly Replicate Musical Talent'],
-    // ['Username 31', 'Only Use Volume Level 1', 'Only Use Volume Level 2'],
-    // ['Username 32', 'Adopt Mythical Creature 1', 'Adopt Mythical Creature 2'],
-    // ['Username 33', 'Inhabit Dwelling Type 1', 'Inhabit Dwelling Type 2'],
-    ['Username 34', 'Lose the capacity for Sense/Function 1', 'Lose the capacity for Sense/Function 2']
+    ["Satan","Have wood chips for teeth or have Velcro as finger nails?"],
+    ["Pixi","Never be able to eat your hyper fixation food or never be allowed to talk about your special interest?"],
+    ["Duckie","Be a cat or be a human with an immortal pet cat companion that you can communicate with?"],
+    ["Pixi","Wear a wet pair of skinny jeans all day that you can't take off or dig out the disgusting squishy food from the bottom of the sink and hold it in your hand all day?"],
+    ["Arcane","Never see the color orange including any of its hues or shades or everything colored orange from now on taste like orange peels?"],
+    ["Pixi","Wear wet socks made of polyester for 8 hours or listen to someone chew loudly with their mouth open for 30 minutes?"],
+    ["Shami","Never play video games ever again or never listen to music ever again?"],
+    ["Pixi","Wear super comfy clothes every day but they never match your style or wear your favorite outfit but it’s slightly itchy?"],
+    ["Artie","Compete in a talent show in another planet or judge an Earth talent show full of aliens?"],
+    ["Folivore","Have floppy bones in your arms or have floppy bones in your legs?"],
+    ["Van","Have tongues for fingers or a finger for a tongue?"],
+    ["Soldier","Participate in the Gumball 3000 with an Opel Astra Coupe with a Koenigsegg TFG V3 engine or participate in an F1 race with a minivan that has a Devel V16 in the back?"],
+    ["Shami","Have 3 meter long hair that can't be tied up or 3 meter long nails that can never be cut?"],
+    ["Satan","Fight Batman or a very pissed off Spider-man?"],
+    ["Pixi","Have a tiny gremlin live in your sock drawer that insults you daily or hear a child giggle from under your bed every night?"],
+    ["Folivore","Have to eat everything using only a large straw or have to eat one very chewy straw per day?"],
+    ["Pixi","Wake up once a week completely naked in a random public place or have your inner thoughts read aloud 24/7?"],
+    ["Poggy","Have unlimited bacon but no more games or games, unlimited games, but no more games?"],
+    ["Artie","Have to babysit 50 alien babies for a day or turn into a space llama for a week?"],
+    ["Gobblo","Have a roomba that clean flawlessly but scream bloody murder every time it bumps into things or have a roomba that actively makes your house dirtier but constantly giving you sweet talk in the sexiest voice you can imagine?"],
+    ["Duckie","Clean up cat vomit with your bare hand once or eat an entire meal of foods you really dislike?"],
+    ["Soldier","Get the next gen NVIDIA GPU, but it will only last 3 months or Get an Nvidia 5090, but you can only play Sims 2 with it?"],
+    ["Folivore","Bint your photos or print your bogos?"],
+    ["Jermy","Be pretty or pretty dumb?"],
+    ["Duckie","Spend all day walking around with shoes on and your sock twisted so the seam is under your toes or walk around all day barefoot on a dirty hardwood floor that has crumbs, hair, and occasional sticky spots?"],
+    ["Duckie","Eat 5 hotdogs or eat 6 hotdogs?"],
+    ["Pixi","Have spaghetti for hair that grows back every night or sweat mayonnaise forever?"],
+    ["Pixi","Fall in love with a new inanimate object every week and feel heartbreak every time it’s gone or be emotionally bonded to a Roomba?"],
+    ["Soldier","Own a sword cane but a random person will always want a duel or own a bow but you will be unable to string it?"],
+    ["Michal","Flap your arms like a chicken for 30 minutes to go on an all expenses covered trip or loudly quack like a duck for an hour to teleport anywhere?"],
+    ["Duckie","Spend 30 minutes outside in public during a hot, sunny Texas summer day or have to place 10 stressful phone calls to strangers for things like changing phone plans, arguing with property management, or bank fees?"],
+    ["Soldier","Go on a one way trip to the moon and plant a flag with your face on it or change any country's flag to whatever you design, but you cannot set foot in that country anymore?"],
+    ["Folivore","Be able to talk to people but never go anywhere you want or never talk to anyone but be able to go anywhere?"]
 ];
 
 const wyrExtraQuestions = [
-    ['Username 35', 'Extra 1', 'Extra 2'],
-    ['Username 36', 'Extra 1', 'Extra 2'],
-    ['Username 37', 'Fin 1', 'Fin 2']
+    ["The Hivemind", "Live in Minecraft with real life foods or live IRL with Minecraft foods?"],
+    ["The Hivemind", "Fight 100 duck-sized horses or one horse-sized duck?"],
+    ["The Hivemind", "Live without Discord or without Twitch?"],
+    ["The Hivemind", "Have the ability to see 1 minute into the future or 100 years into the future?"],
+    ["The Hivemind", "Not use AC for the rest of your life or not use the internet for the rest of your life?"],
+    ["The Hivemind", "Have a personal maid or have a personal chef?"],
+    ["The Hivemind", "Be the size of an ant or be the size of a giraffe?"],
+    ["The Hivemind", "Have to drive in reverse or use your phone upside down?"],
+    ["The Hivemind", "Lose the ability to see or lose the ability to speak?"],
+    ["The Hivemind", "Be always stuck in traffic but find a perfect parking spot or never hit traffic but always take forever to park?"],
+    ["The Hivemind", "Give up cursing forever or give up potatoes for 10 years?"],
+    ["The Hivemind", "Have to hunt for food or have to grow your food?"],
+    ["The Hivemind", "Go back to kindergarten with everything you know now or know now everything your future self will learn?"],
+    ["The Hivemind", "Always feel slightly too hot or always feel slightly too cold?"],
+    ["The Hivemind", "Be able to control the weather or talk to animals?"],
+    ["The Hivemind", "Live in a haunted house or be stranded on a deserted island?"],
+    ["The Hivemind", "Have super strength or super speed?"],
+    ["The Hivemind", "Never have to sleep or never have to eat?"],
+    ["The Hivemind", "Be able to only speak in movie quotes or only communicate via song lyrics?"],
+    ["The Hivemind", "Only play one video game for the rest of your life or never play video games again?"],
+    ["The Hivemind", "Have a rewind button for bad decisions or a fast-forward button to skip boring moments?"],
+    ["The Hivemind", "Be able to teleport but only to places you’ve been or be able to fly but only at walking speed?"],
+    ["The Hivemind", "Always have a perfect comeback or always have the perfect joke?"],
+    ["The Hivemind", "Be the smartest person in the room or the funniest person in the room?"],
+    ["The Hivemind", "Live without music or live without movies and TV?"],
+    ["The Hivemind", "Have a dragon as a pet or a unicorn as a pet?"],
+    ["The Hivemind", "Be able to breathe in space or survive underwater indefinitely?"],
+    ["The Hivemind", "Only wear your favorite outfit forever or never wear the same thing twice?"],
+    ["The Hivemind", "Be famous on Twitch or on YouTube?"],
+    ["The Hivemind", "Always win at video games but lose in real life or always win in real life but lose at video games?"],
+    ["The Hivemind", "Speak with animals or speak every human language?"],
+    ["The Hivemind", "Eat your favorite meal every day or never eat it again?"],
+    ["The Hivemind", "Have a pet dinosaur or a pet robot?"],
+    ["The Hivemind", "Be able to pause time or rewind time?"],
+    ["The Hivemind", "Spend a year traveling the world or settle in a dream city forever?"],
+    ["The Hivemind", "Have a private jet or a luxury yacht?"],
+    ["The Hivemind", "Be able to shapeshift into any animal or into any person?"],
+    ["The Hivemind", "Own a lightsaber or a hoverboard?"],
+    ["The Hivemind", "Be in a real-life RPG or in a real-life superhero universe?"],
+    ["The Hivemind", "Only watch horror movies or only watch comedies?"],
+    ["The Hivemind", "Have a bottomless snack bowl or an infinite game library?"],
+    ["The Hivemind", "Be able to visit any fictional world or bring any fictional character to life?"],
+    ["The Hivemind", "Speak only in rhymes or speak only in riddles?"],
+    ["The Hivemind", "Always have the latest tech or always have the coolest fashion?"],
+    ["The Hivemind", "Have all your clothes be one size too big or one size too small?"],
+    ["The Hivemind", "Only be able to whisper or only be able to shout?"],
+    ["The Hivemind", "Have a personal theme song play whenever you enter a room or a laugh track whenever you speak?"],
+    ["The Hivemind", "See the world in black and white or only via animated cartoons?"],
+    ["The Hivemind", "Wake up with a random superpower each day or keep one permanent mediocre superpower?"],
+    ["The Hivemind", "Have a rewind day option every Monday or a skip day option every Friday?"],
+    ["The Hivemind", "Only eat spicy food forever or never taste anything again?"],
+    ["The Hivemind", "Have the ability to stop time when sneezing or teleport when yawning?"],
+    ["The Hivemind", "Own a spaceship or a time machine?"],
+    ["The Hivemind", "Be able to talk to your past self or your future self?"],
+    ["The Hivemind", "Get free delivery for life or free streaming subscriptions forever?"],
+    ["The Hivemind", "Live inside a video game or have the video game characters come to your world?"],
+    ["The Hivemind", "Always know when someone is lying or never be lied to again?"],
+    ["The Hivemind", "Lose your sense of taste or your sense of direction?"],
+    ["The Hivemind", "Have fingers as long as your arms or arms as short as your fingers?"],
+    ["The Hivemind", "Have your dream PC but no internet or an old laptop with blazing-fast internet?"],
+    ["The Hivemind", "Be able to sleep instantly or have insomnia but wake up fully refreshed in 4 hours?"],
+    ["The Hivemind", "Be a famous meme or invent the next viral trend?"],
+    ["The Hivemind", "Be able to walk through walls or never get tired?"],
+    ["The Hivemind", "Have random sound effects play when you move or dramatic music follow your emotions?"],
+    ["The Hivemind", "Own a floating house or a house underground?"],
+    ["The Hivemind", "Wear winter clothes in summer or summer clothes in winter?"],
+    ["The Hivemind", "Have eyebrows that sing or eyelashes that blink to the beat of music?"],
+    ["The Hivemind", "Have to say everything twice or only speak in third person?"],
+    ["The Hivemind", "Turn invisible when embarrassed or float when happy?"],
+    ["The Hivemind", "Have a rewind button for dreams or fast-forward through awkward conversations?"],
+    ["The Hivemind", "Never get bored or never be embarrassed again?"],
+    ["The Hivemind", "Have background music that reflects your mood or a narrator commentating your actions?"],
+    ["The Hivemind", "Have free meals forever or free snacks forever?"],
+    ["The Hivemind", "Forget your most embarrassing memory or forget your cringiest online post?"],
+    ["The Hivemind", "Wake up to the smell of fresh cookies or the sound of ocean waves every day?"],
+    ["The Hivemind", "Control fire with your mind or water with your hands?"],
+    ["The Hivemind", "Only speak in emojis or only type using memes?"],
+    ["The Hivemind", "Always win coin flips or always guess rock-paper-scissors correctly?"]
 ];
 
 let currentWyrIndex = 0;
+let tempWyrQuestion = true;
 
 const TLArray = [
-    ["User 1", "Text 1", "https://www.google.com"],
-    ["User 2", "Text 2", "https://www.bing.com"]
+    ["Pixi","Genshin Characters","https://tiermaker.com/create/genshin-impact-characters-ver-40--harbingers-16007762"],
+    ["Penguin", "Solar System", "https://tiermaker.com/create/the-solar-systems-planets-dwarfs-and-major-moons-15870678"],
+    ["Duckie","Pilk Derivatives","https://tiermaker.com/create/liquids-to-mix-with-milk-1642274"],
+    ["Folivore","Alien Emojis","https://tiermaker.com/create/alien-emojis-tier-list-15715935"],
+    ["Poggy", "Aliens in Charge", "https://tiermaker.com/create/aliens-in-charge-18378348"],
+    ["Duckie","Ironmouse Models","https://tiermaker.com/create/ironmouses-every-single-model-v2-1663714"],
+    ["Pixi","90s-00s Animes","https://tiermaker.com/create/90s-00s-anime-16890063"],
+    ["Duckie","Scents and Smells","https://tiermaker.com/create/scents-and-smells-705831"],
+    ["Pixi","Studio Ghibli Foods","https://tiermaker.com/create/studio-ghibli-food-16211598"],
+    ["Duckie","Snacks and Candy","https://tiermaker.com/create/american-snacks-and-candyyy-806672"],
+    ["Pixi","Disney Animations","https://tiermaker.com/create/walt-disney-animation-studios-films-through-2021-1413224"],
+    ["Duckie","Periodic Table","https://tiermaker.com/create/periodic-table-of-elements-932440"],
+    ["Pixi","Studiio Ghibli Animations","https://tiermaker.com/create/all-studio-ghibli-animation-films-tier-list-16181846-3"],
+    ["Folivore","Alien Abduction","https://tiermaker.com/create/alien-abduction-tier-16681067"],
+    ["Duckie","Frieren Expressions","https://tiermaker.com/create/oops-its-all-frieren-16900351"],
+    ["Pixi","Soup","https://tiermaker.com/create/definitive-soup-tier-list-884156"],
+    ["Folivore","Cat Memes","https://tiermaker.com/create/cat-memes-1172968"],
+    ["Folivore","Potato","https://tiermaker.com/create/extensive-potato-preparation-tier-list-186670"],
+    ["Pixi","Cereals","https://tiermaker.com/create/breakfast-cereals-162129"],
+    ["Duckie","Frieren Characters","https://tiermaker.com/create/769--okzk-oo-o79867867-1083475 "]
 ]
 const TLExtraArray = [
-    ["User 1E", "Text 1E", "https://www.chatgpt.com"],
-    ["User 2E", "Text 2E", "https://www.fast.com"]
+    ["The Hivemind", "Spongebob Characters", "https://tiermaker.com/create/ultimate-spongebob-character-tier-list-138457"],
+    ["The Hivemind", "CS:GO Maps", "https://tiermaker.com/create/csgo-competitive-maps-may-2021-995433"],
+    ["The Hivemind", "ATLA Characters", "https://tiermaker.com/create/avatar-the-last-airbender-ultimate-character-rank-617330"],
+    ["The Hivemind", "Krabby Patties", "https://tiermaker.com/create/spongebob-krabby-patties-15693516"],
+    ["The Hivemind", "Drinks", "https://tiermaker.com/create/types-of-drinks-584882"],
+    ["The Hivemind", "Esports Logos", "https://tiermaker.com/create/esports--logos-731003"],
+    ["The Hivemind", "Ice Cream Flavors", "https://tiermaker.com/create/ice-cream-flavors-48482"],
+    ["The Hivemind", "CS:GO Weapons", "https://tiermaker.com/create/csgo-weapons-15509224"],
+    ["The Hivemind", "Minecraft Woods", "https://tiermaker.com/create/minecraft-wood-types-16567643"],
+    ["The Hivemind", "Fruits", "https://tiermaker.com/create/fruit-complete-48215"]
 ]
 let currentTLIndex = 0;
 
@@ -84,6 +185,11 @@ function setWyrNavigation(){
 
     if(wyrCredit){
         wyrCredit.addEventListener('click', () => {
+            if(tempWyrQuestion){
+                blurryCredit.textContent="Your Mom";
+                blurryCredit.classList.remove("blur");
+                return;
+            }
             if(currentWyrIndex < wyrQuestions.length){
                 blurryCredit.textContent=wyrQuestions[currentWyrIndex][0];
             } else {
@@ -103,6 +209,11 @@ function setWyrNavigation(){
 
     if (nextWyrBtn) {
         nextWyrBtn.addEventListener('click', () => {
+            if(tempWyrQuestion){
+                tempWyrQuestion = false;
+                updateWyrDisplay();
+                return;
+            }
             if(currentWyrIndex >= wyrQuestions.length + wyrExtraQuestions.length) return;
             currentWyrIndex++;
             updateWyrDisplay();
@@ -113,13 +224,26 @@ function setWyrNavigation(){
         blurryCredit.textContent=generateRandomString();
         blurryCredit.classList.add("blur");
         if (wyrQuestionDisplay) {
+            if(tempWyrQuestion){
+                if (prevWyrBtn) {
+                    prevWyrBtn.classList.remove('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
+                    prevWyrBtn.classList.add('!bg-gray-500', '!cursor-not-allowed', '!dark:bg-gray-700');
+                }
+                wyrQuestionDisplay.textContent = "Would you rather look at this placeholder forever or get started?";
+                return;
+            }
             if(currentWyrIndex < wyrQuestions.length){
-                wyrQuestionDisplay.textContent = wyrQuestions[currentWyrIndex][1] + " or " + wyrQuestions[currentWyrIndex][2];
+                wyrQuestionDisplay.textContent = wyrQuestions[currentWyrIndex][1];
             } else {
-                wyrQuestionDisplay.textContent = wyrExtraQuestions[currentWyrIndex-wyrQuestions.length][1] + " or " + wyrExtraQuestions[currentWyrIndex-wyrQuestions.length][2];
+                wyrQuestionDisplay.textContent = wyrExtraQuestions[currentWyrIndex-wyrQuestions.length][1];
             }
         }
         setWryProgress()
+        if(currentWyrIndex === 7 || currentWyrIndex === 28){
+            setTitleToRick(true);
+        } else {
+            setTitleToRick(false);
+        }
         if(currentWyrIndex === 0){
             if (prevWyrBtn) {
                 prevWyrBtn.classList.remove('!bg-pink-700', '!hover:bg-pink-800', '!dark:bg-pink-600', '!dark:hover:bg-pink-700', '!dark:focus:ring-pink-800');
@@ -153,7 +277,7 @@ function setWyrNavigation(){
 
 function setWryProgress() {
     const progressBar = document.getElementById('wyr-progress');
-    progressBar.setAttribute('value', String(currentWyrIndex/(wyrQuestions.length) * 100));
+    progressBar.setAttribute('value', String(currentWyrIndex/(wyrQuestions.length-1) * 100));
 }
 
 
@@ -203,12 +327,7 @@ function setTLNavigation(){
                 TLButton.setAttribute("href", TLExtraArray[currentTLIndex-TLArray.length][2])
             }
         }
-        if(currentTLIndex === 2){
-            setTitleToRick(true);
-        } else {
-            setTitleToRick(false);
-        }
-        setTLSteps()
+        setTLProgress()
         if(currentTLIndex === 0){
             if (prevTLBtn) {
                 prevTLBtn.disabled = true;
@@ -240,39 +359,10 @@ function setTLNavigation(){
 
     updateTLDisplay();
 }
-function addTLSteps(){
-    const stepsList = document.getElementById('tl-steps');
 
-    for (let i = 0; i < TLArray.length; i++) {
-        const newStepLi = document.createElement('li');
-        newStepLi.id = `tl-${i}`;
-        newStepLi.classList.add('step');
-        if(i === 0) {
-            newStepLi.classList.add('step-primary');
-        }
-        newStepLi.setAttribute('data-content', String(i + 1));
-        stepsList.appendChild(newStepLi);
-    }
-
-    const newStepLi = document.createElement('li');
-    newStepLi.id = `tl-q`;
-    newStepLi.classList.add('step');
-    newStepLi.setAttribute('data-content', '?');
-    stepsList.appendChild(newStepLi);
-    setTLSteps()
-}
-
-function setTLSteps(){
-    const stepsList = document.getElementById('tl-steps');
-    const tlSteps = stepsList.querySelectorAll('.step');
-
-    tlSteps.forEach((step, index) => {
-        if (index < currentTLIndex + 1) {
-            step.classList.add('step-primary');
-        } else {
-            step.classList.remove('step-primary');
-        }
-    });
+function setTLProgress(){
+    const progressBar = document.getElementById('tl-progress');
+    progressBar.setAttribute('value', String(currentTLIndex/(TLArray.length-1) * 100));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -288,7 +378,6 @@ document.addEventListener('DOMContentLoaded', () => {
   `;
     document.head.appendChild(style);
     setWyrNavigation();
-    addTLSteps();
     setTLNavigation();
 });
 

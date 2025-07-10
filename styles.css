@@ -45,7 +45,7 @@
     color: #ffffff;
 }
 
-[data-theme="mytheme"] {
+[data-theme="dark"] {
     --p: 0.6576 0.2499 58.41;       /* oklch for #db2777 */
     --pc: 0 0% 100%;                /* white text on pink */
     --fallback-p: rgb(190 24 93);
